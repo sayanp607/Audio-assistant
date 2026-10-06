@@ -1,18 +1,20 @@
 # ── Audio / Transcription ──────────────────────────────────────────────────────
-# Local Whisper transcription (Removed, using Sarvam instead)
 yt-dlp                  # YouTube audio download
-ffmpeg-python           # FFmpeg bindings (Whisper also needs the ffmpeg binary)
+ffmpeg-python           # FFmpeg bindings
 pydub                   # Audio file handling / format conversion
+openai-whisper          # Local Whisper transcription fallback
 
 # ── Translation ────────────────────────────────────────────────────────────────
-deep-translator         # Hindi → English (free, no API key required)
-# OR: googletrans==4.0.0rc1   # Alternative; pinned because the API is unstable
+deep-translator         # Multilingual translation
 
-# ── LLM / LangChain ────────────────────────────────────────────────────────────
+# ── LLM / LangChain / Agentic AI ──────────────────────────────────────────────
 langchain               # LangChain core
-langchain-community     # Community integrations (MistralAI, HuggingFace, etc.)
-langchain-mistralai     # Mistral LCEL chain support
-mistralai               # Official Mistral Python client (free tier API)
+langchain-community     # Community integrations
+langchain-mistralai     # Mistral LCEL & agent support
+langgraph               # LangGraph ReAct agent orchestration
+mistralai               # Mistral Python client
+duckduckgo-search       # Live web search tool for agent
+tavily-python           # Advanced AI web search tool
 
 # ── RAG / Vector Store ─────────────────────────────────────────────────────────
 chromadb                # ChromaDB vector store
@@ -21,14 +23,13 @@ sentence-transformers   # HuggingFace embeddings (e.g. all-MiniLM-L6-v2)
 langchain-huggingface   # Updated HuggingFace integration for LangChain
 huggingface-hub         # Model download utilities
 
-# ── UI ─────────────────────────────────────────────────────────────────────────
-streamlit               # Web UI
+# ── API & Server ───────────────────────────────────────────────────────────────
+fastapi                 # REST API server
+uvicorn                 # ASGI web server
 
-# ── Export ─────────────────────────────────────────────────────────────────────
+# ── Export & Utilities ─────────────────────────────────────────────────────────
 fpdf2                   # PDF export
-reportlab               # Alternative PDF export (richer formatting)
-
-# ── Utilities ──────────────────────────────────────────────────────────────────
+reportlab               # Alternative PDF export
 python-dotenv           # Load .env for API keys
-tiktoken                # Token counting for chunking strategies
+tiktoken                # Token counting
 numpy
