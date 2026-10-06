@@ -1,0 +1,34 @@
+# ── Audio / Transcription ──────────────────────────────────────────────────────
+# Local Whisper transcription (Removed, using Sarvam instead)
+yt-dlp                  # YouTube audio download
+ffmpeg-python           # FFmpeg bindings (Whisper also needs the ffmpeg binary)
+pydub                   # Audio file handling / format conversion
+
+# ── Translation ────────────────────────────────────────────────────────────────
+deep-translator         # Hindi → English (free, no API key required)
+# OR: googletrans==4.0.0rc1   # Alternative; pinned because the API is unstable
+
+# ── LLM / LangChain ────────────────────────────────────────────────────────────
+langchain               # LangChain core
+langchain-community     # Community integrations (MistralAI, HuggingFace, etc.)
+langchain-mistralai     # Mistral LCEL chain support
+mistralai               # Official Mistral Python client (free tier API)
+
+# ── RAG / Vector Store ─────────────────────────────────────────────────────────
+chromadb                # ChromaDB vector store
+langchain-chroma        # LangChain Chroma integration
+sentence-transformers   # HuggingFace embeddings (e.g. all-MiniLM-L6-v2)
+langchain-huggingface   # Updated HuggingFace integration for LangChain
+huggingface-hub         # Model download utilities
+
+# ── UI ─────────────────────────────────────────────────────────────────────────
+streamlit               # Web UI
+
+# ── Export ─────────────────────────────────────────────────────────────────────
+fpdf2                   # PDF export
+reportlab               # Alternative PDF export (richer formatting)
+
+# ── Utilities ──────────────────────────────────────────────────────────────────
+python-dotenv           # Load .env for API keys
+tiktoken                # Token counting for chunking strategies
+numpy
